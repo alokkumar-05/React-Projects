@@ -1,13 +1,20 @@
 
 import './App.css'
-import 'Nagitation' from ../compontents/Navigation;
+import ContactForm from './components/ContactForm/ContactForm'
+import ContactHeader from './components/ContactHeader/ContactHeader'
+import Navigation from './components/Navigation/Navigation'
 
 function App() {
 
   return (
-    <div>
-    <Navigation/>
-    </div>
+    <div> 
+      <Navigation/>
+      <main className='main_container'>
+        <ContactHeader/>
+       <ContactForm/>
+      </main>
+       
+   </div>
   )
 }
 
